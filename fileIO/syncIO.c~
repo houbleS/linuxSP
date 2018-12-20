@@ -1,0 +1,9 @@
+#include <unistd.h>
+
+int main()
+{
+  /* int fsync(int fd); */
+  /* int fdatasync(int fd); only data writing */
+  
+  return 0;
+}

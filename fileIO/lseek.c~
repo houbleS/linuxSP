@@ -1,0 +1,15 @@
+#include <sys/types.h>
+#include <unistd.h>
+
+int main()
+{
+  /* off_t lseek(int fd, off_t pos, int origin); */
+
+  off_t ret;
+
+  ret = lseek(fd, (off_t)1825, SEEK_SET);
+  if (ret == (off_t) -1){
+    /* ERROR CODE */
+  }
+  return 0;
+}
