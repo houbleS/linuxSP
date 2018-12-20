@@ -27,7 +27,7 @@ int main()
 
   /*setting to struct timeval for wait 5sec to select() */
   tv.tv_sec = TIMEOUT;
-  tv.ttv_usec = 0;
+  tv.tv_usec = 0;
 
   /* waiting INPUT */
   ret = select(STDIN_FILENO + 1, &readfds, NULL, NULL, &tv);
