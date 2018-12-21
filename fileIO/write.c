@@ -12,5 +12,6 @@ int main()
   if (nr == -1) {
     /* ERROR CODE */
   }
+  
   return 0;
 }
