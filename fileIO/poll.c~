@@ -1,0 +1,11 @@
+#include <poll.h>
+
+int main()
+{
+  struct pollfd {
+    int fd;
+    short events; /* to watchdog event */
+    short revents; /* occurred Event */
+  };
+  return 0;
+}
