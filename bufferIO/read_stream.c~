@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+  /* int fgetc(FILE *stream) */
+
+  int c;
+
+  c = fgetc(stream);
+  if (c == EOF) {
+    /* ERROR CODE */
+  }
+  else {
+    printf("c= %c\n", (char)c);
+  }
+  return 0;
+}

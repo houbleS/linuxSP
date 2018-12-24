@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+  /* int putc(int c, FILE *stream); */
+  FILE *stream;
+  stream = fopen("/etc/manifest", "w");
+  if (fputc('p', stream) == EOF ){
+    
+  }
+  return 0;
+}

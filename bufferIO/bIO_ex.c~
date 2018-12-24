@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  FILE *in, *out;
+  struct pirate
+  {
+    char name[100];
+    unsigned long booty;
+    unsigned int beard_len;
+  } p, blackbeard = {"edward TTeachh", 950, 48};
+
+  out = fopen("data", "w");
+  return 0;
+}
