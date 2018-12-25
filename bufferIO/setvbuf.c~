@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+  /* int setvbuf(FILE *stream, char *buf, int mode, size_t size); */
+
+  char buf[BUFSIZ];
+
+  setvbuf(stdout, buf, _IOFBF, BUFSIZ);
+  printf("Arrr!");
+
+  
+  return 0;
+}

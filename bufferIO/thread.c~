@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+  /* manual file lock sc */
+  /* void flockfile(FILE *stream); */
+  void funlockfile(FILE *stream);
+  
+  return 0;
+}
