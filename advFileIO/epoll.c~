@@ -1,0 +1,21 @@
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/epoll.h>
+
+int main()
+{
+  /* int epoll_create1(int flags); gt epoll_create, Valid flags = EPOLL_CLOSEXEC  */
+  /* epoll_create(int size);*/
+
+  int epfd;
+
+  epfd = epoll_create1(0);
+  if (epfd < 0) {
+    perror("epoll_create1");
+    return 1;
+  }
+
+  close(epfd);
+  
+  return 0;
+}
