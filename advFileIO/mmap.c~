@@ -1,0 +1,12 @@
+#include <sys/mman.h>
+
+int main()
+{
+  /* void mmnp(void *adrr, size_t len, int prot, int flags, int fd, off_t offset); return Address not addr. 
+   prot :
+       PROT_NONE, PROT_READ, PROT_WRITE, PROT_EXEC
+   */
+ 
+  
+  return 0;
+}
