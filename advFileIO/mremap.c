@@ -1,0 +1,18 @@
+#include <mman.h>
+
+int main()
+{
+  /* void *realloc(void *addr, size_t len) */
+  /* { */
+  /*   size_t old_size = look_up_mapping_size(addr); */
+  /*   void *p; */
+
+  /*   p = mremap(addr, old_size, len, MREMAP_MAYMOVE); */
+  /*   if (p == MAP_FAILED) { */
+  /*     return NULL; */
+  /*   } */    
+  /*   return p; */
+  /* } */
+  
+  return 0;
+}
