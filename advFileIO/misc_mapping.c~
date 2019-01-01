@@ -1,0 +1,11 @@
+#include <mman.h>
+
+int main()
+{
+  int mprotect(const void *addr, size_t len, int prot);
+  int msync(void *addr, size_t len, int flags);
+  ex) if (msync(addr, len, MS_ASYNC) {
+      perror("msync");
+ }
+  return 0;
+}
