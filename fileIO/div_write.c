@@ -2,7 +2,7 @@
 
 int main()
 {
-  ssize_tt ret,nr;
+  ssize_t ret,nr;
 
   while (len != 0 && (ret = write(fd, buf, len) != 0) {
       if (ret == -1) {
