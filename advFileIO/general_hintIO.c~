@@ -1,0 +1,17 @@
+#include <fcntl.h>
+
+int main()
+{
+  int posix_fadvise(int fd, off_t offset, off_t len, int advice);
+  if (off_t len == 0){
+    [offset, file_length]
+  }
+
+  int ret;
+
+  ret = posix_fadvise(fd, 0, 0, POSIX_FADV_RANDOM);
+  if (ret == -1) {
+    perror("posix_fadvise");
+  }
+  return 0;
+}
