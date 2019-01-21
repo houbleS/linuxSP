@@ -15,7 +15,7 @@
    }
    printf("The %d was opened succesfully!\n", fd);
 
-   if (read(fd, rdbuf, BUFSIZ) == ) {
+   if (read(fd, rdbuf, BUFSIZ) == -1) {
      perror("read");
      return 1;
    }

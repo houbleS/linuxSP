@@ -15,7 +15,7 @@ int main()
     perror("truncate");
     return -1;
   }
-
+  printf("Pirate ftrucated!\n");
   /*
     Edward Teach was a notorious English pirate.
     He was nicknamed Blackbeard
